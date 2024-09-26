@@ -9,13 +9,37 @@
   </head>
   <body>
     <!-- No Transition -->
+     <!-- 只过度color，默认150毫秒,transition和 transition-all, 都是差不多的，具体细节看下面笔记 -->
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 transition-colors duration-1000"
+    >
+      Click me
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 transition-all duration-1000"
+    >
+      Click me
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 transition duration-1000"
+    >
+      Click me
+    </button>
+    
+    <!-- Transition：过度，让效果柔和一点
+      如果只是想过度颜色，就用transition colors
+      只过度透明度 transition opacity
+      只过度shadow transition sahdow
+      只过度trasform transition transform 
+    -->
     <button
       class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700"
     >
       Click me
     </button>
-
-    <!-- Transition -->
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:opacity-20 transition-opacity"
+    >
+      Click me
+    </button>
 
     <!-- Transition & Transform -->
 
